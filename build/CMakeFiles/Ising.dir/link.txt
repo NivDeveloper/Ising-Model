@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Ising.dir/src/Ising.cpp.o CMakeFiles/Ising.dir/src/main.cpp.o -o Ising 

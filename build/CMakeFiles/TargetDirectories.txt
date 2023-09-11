@@ -1,0 +1,3 @@
+/home/nivan/Uni/Ising/NaiveC++/build/CMakeFiles/Ising.dir
+/home/nivan/Uni/Ising/NaiveC++/build/CMakeFiles/edit_cache.dir
+/home/nivan/Uni/Ising/NaiveC++/build/CMakeFiles/rebuild_cache.dir
