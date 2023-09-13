@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nivan/Uni/Ising/NaiveC++
+CMAKE_SOURCE_DIR = /home/nivan/Uni/Ising/NaiveC++/Ising-Model
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nivan/Uni/Ising/NaiveC++/build
+CMAKE_BINARY_DIR = /home/nivan/Uni/Ising/NaiveC++/Ising-Model/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Ising.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/Ising.dir/flags.make
 CMakeFiles/Ising.dir/src/Ising.cpp.o: CMakeFiles/Ising.dir/flags.make
 CMakeFiles/Ising.dir/src/Ising.cpp.o: ../src/Ising.cpp
 CMakeFiles/Ising.dir/src/Ising.cpp.o: CMakeFiles/Ising.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nivan/Uni/Ising/NaiveC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ising.dir/src/Ising.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ising.dir/src/Ising.cpp.o -MF CMakeFiles/Ising.dir/src/Ising.cpp.o.d -o CMakeFiles/Ising.dir/src/Ising.cpp.o -c /home/nivan/Uni/Ising/NaiveC++/src/Ising.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nivan/Uni/Ising/NaiveC++/Ising-Model/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ising.dir/src/Ising.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ising.dir/src/Ising.cpp.o -MF CMakeFiles/Ising.dir/src/Ising.cpp.o.d -o CMakeFiles/Ising.dir/src/Ising.cpp.o -c /home/nivan/Uni/Ising/NaiveC++/Ising-Model/src/Ising.cpp
 
 CMakeFiles/Ising.dir/src/Ising.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ising.dir/src/Ising.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nivan/Uni/Ising/NaiveC++/src/Ising.cpp > CMakeFiles/Ising.dir/src/Ising.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nivan/Uni/Ising/NaiveC++/Ising-Model/src/Ising.cpp > CMakeFiles/Ising.dir/src/Ising.cpp.i
 
 CMakeFiles/Ising.dir/src/Ising.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ising.dir/src/Ising.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nivan/Uni/Ising/NaiveC++/src/Ising.cpp -o CMakeFiles/Ising.dir/src/Ising.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nivan/Uni/Ising/NaiveC++/Ising-Model/src/Ising.cpp -o CMakeFiles/Ising.dir/src/Ising.cpp.s
 
 CMakeFiles/Ising.dir/src/main.cpp.o: CMakeFiles/Ising.dir/flags.make
 CMakeFiles/Ising.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Ising.dir/src/main.cpp.o: CMakeFiles/Ising.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nivan/Uni/Ising/NaiveC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ising.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ising.dir/src/main.cpp.o -MF CMakeFiles/Ising.dir/src/main.cpp.o.d -o CMakeFiles/Ising.dir/src/main.cpp.o -c /home/nivan/Uni/Ising/NaiveC++/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nivan/Uni/Ising/NaiveC++/Ising-Model/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ising.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ising.dir/src/main.cpp.o -MF CMakeFiles/Ising.dir/src/main.cpp.o.d -o CMakeFiles/Ising.dir/src/main.cpp.o -c /home/nivan/Uni/Ising/NaiveC++/Ising-Model/src/main.cpp
 
 CMakeFiles/Ising.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ising.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nivan/Uni/Ising/NaiveC++/src/main.cpp > CMakeFiles/Ising.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nivan/Uni/Ising/NaiveC++/Ising-Model/src/main.cpp > CMakeFiles/Ising.dir/src/main.cpp.i
 
 CMakeFiles/Ising.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ising.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nivan/Uni/Ising/NaiveC++/src/main.cpp -o CMakeFiles/Ising.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nivan/Uni/Ising/NaiveC++/Ising-Model/src/main.cpp -o CMakeFiles/Ising.dir/src/main.cpp.s
 
 # Object files for target Ising
 Ising_OBJECTS = \
@@ -109,7 +109,7 @@ Ising: CMakeFiles/Ising.dir/src/Ising.cpp.o
 Ising: CMakeFiles/Ising.dir/src/main.cpp.o
 Ising: CMakeFiles/Ising.dir/build.make
 Ising: CMakeFiles/Ising.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nivan/Uni/Ising/NaiveC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Ising"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nivan/Uni/Ising/NaiveC++/Ising-Model/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Ising"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ising.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/Ising.dir/clean:
 .PHONY : CMakeFiles/Ising.dir/clean
 
 CMakeFiles/Ising.dir/depend:
-	cd /home/nivan/Uni/Ising/NaiveC++/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nivan/Uni/Ising/NaiveC++ /home/nivan/Uni/Ising/NaiveC++ /home/nivan/Uni/Ising/NaiveC++/build /home/nivan/Uni/Ising/NaiveC++/build /home/nivan/Uni/Ising/NaiveC++/build/CMakeFiles/Ising.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nivan/Uni/Ising/NaiveC++/Ising-Model/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nivan/Uni/Ising/NaiveC++/Ising-Model /home/nivan/Uni/Ising/NaiveC++/Ising-Model /home/nivan/Uni/Ising/NaiveC++/Ising-Model/build /home/nivan/Uni/Ising/NaiveC++/Ising-Model/build /home/nivan/Uni/Ising/NaiveC++/Ising-Model/build/CMakeFiles/Ising.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Ising.dir/depend
 

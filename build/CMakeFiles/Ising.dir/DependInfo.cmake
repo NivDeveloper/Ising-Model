@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nivan/Uni/Ising/NaiveC++/src/Ising.cpp" "CMakeFiles/Ising.dir/src/Ising.cpp.o" "gcc" "CMakeFiles/Ising.dir/src/Ising.cpp.o.d"
-  "/home/nivan/Uni/Ising/NaiveC++/src/main.cpp" "CMakeFiles/Ising.dir/src/main.cpp.o" "gcc" "CMakeFiles/Ising.dir/src/main.cpp.o.d"
+  "/home/nivan/Uni/Ising/NaiveC++/Ising-Model/src/Ising.cpp" "CMakeFiles/Ising.dir/src/Ising.cpp.o" "gcc" "CMakeFiles/Ising.dir/src/Ising.cpp.o.d"
+  "/home/nivan/Uni/Ising/NaiveC++/Ising-Model/src/main.cpp" "CMakeFiles/Ising.dir/src/main.cpp.o" "gcc" "CMakeFiles/Ising.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

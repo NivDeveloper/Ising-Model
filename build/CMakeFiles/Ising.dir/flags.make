@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nivan/Uni/Ising/NaiveC++/src
+CXX_INCLUDES = -I/home/nivan/Uni/Ising/NaiveC++/Ising-Model/src
 
 CXX_FLAGS = 
 

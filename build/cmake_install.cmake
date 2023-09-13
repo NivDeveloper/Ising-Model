@@ -1,4 +1,4 @@
-# Install script for directory: /home/nivan/Uni/Ising/NaiveC++
+# Install script for directory: /home/nivan/Uni/Ising/NaiveC++/Ising-Model
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nivan/Uni/Ising/NaiveC++/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nivan/Uni/Ising/NaiveC++/Ising-Model/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

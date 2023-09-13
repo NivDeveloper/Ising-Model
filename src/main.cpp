@@ -105,8 +105,11 @@ int main() {
 	// x.smoothTemp(1000, 5, file);
 
 	// meanField(1000, 12, float(1)/10000, 14.0);
-	Ising2d x(100, 2.0, 1'000'000);
+	Ising2d x(999, 2.27, 100'00'000'000);
 	x.Run();
+	x.blockSpin();
+	x.DrawToImage("bl");
+
 
 	// Ising2d x(100, 1.5, 100'000'000);
 	// x.Run();

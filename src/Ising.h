@@ -28,6 +28,7 @@ public:
     int corrFunc(std::ofstream& file);
     void smoothcorrLength(int runs, std::ofstream& file);
     int corrLength();
+    void blockSpin();
     void DrawToImage(const char* name);
     float du(int i, int j);
 

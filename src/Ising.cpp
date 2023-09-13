@@ -94,9 +94,9 @@ void Ising2d::Run(){
             // totalSpin += 2*grid[x][y];
         }
 
-        if (i%10'000==0) {
-            DrawToImage(std::to_string(i).c_str());
-        }
+        // if (i%10'000==0) {
+        //     DrawToImage(std::to_string(i).c_str());
+        // }
     }
 
 }
@@ -182,7 +182,7 @@ void Ising2d::DrawToImage(const char* name){
     file.close();
     std::string conv = std::string("convert ../video/")
         + std::string(name)
-        + std::string(".ppm -scale 400x ../video/")
+        + std::string(".ppm ../video/")
         + std::string(name)
         + std::string(".png");
 
@@ -333,4 +333,59 @@ void Ising2d::smoothcorrLength(int runs, std::ofstream& file) {
         std::cout << i << std::endl;
     }
     file.close();
+}
+
+void Ising2d::blockSpin() {
+
+    // declare block (uninitialized)
+    int** block = new int*[size/3];
+
+    for (int i = 0; i < size/3; i++) {
+        block[i] = new int[size/3];
+
+        // populate with average of grid spins
+        for (int j = 0; j < size/3; j++) {
+            //access 3*3 grid block centered at [i,j]
+            // i,j      i+1,j       i+2,j
+            // i,j+1    i+1,j+1     i+2,j+1
+            // i,j+2    i+1,j+2     i+2,j+2
+            int x = i*3;
+            int y = j*3;
+            int sum = 
+                grid[x][y] +    grid[x+1][y] +  grid[x+2][y]
+            +   grid[x][y+1]+   grid[x+1][y+1]+ grid[x+2][y+1]
+            +   grid[x][y+2]+   grid[x+1][y+2]+ grid[x+2][y+2];
+            block[i][j] = (sum < 0) ? -1 : 1;
+            std::cout << block[i][j];
+        }
+        std::cout << std::endl;
+    }
+    // Draw block to image
+    std::ofstream file("../video/block.ppm");
+
+    file << "P3\n" << size/3  << " " << size/3 << "\n" << "255\n";
+
+    for(size_t i = 0; i < size/3; i++){
+        for(size_t j = 0; j < size/3; j++){
+            if(block[i][j] == 1) file << "255 255 255 ";
+            else file << "0 0 0 ";
+        }
+    }
+
+    std::string name("block");
+    file.close();
+    std::string conv = std::string("convert ../video/")
+        + std::string(name)
+        + std::string(".ppm ../video/")
+        + std::string(name)
+        + std::string(".png");
+
+    std::string rm = std::string("rm ../video/")
+        + std::string(name)
+        + std::string(".ppm");
+
+    int i = system(conv.c_str());
+    i = system(rm.c_str());
+
+
 }
