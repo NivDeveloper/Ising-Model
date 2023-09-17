@@ -16,19 +16,22 @@ public:
     
 
     Ising2d(int size, float temp, long iter);
+    Ising2d(int size, float temp, long iter, int** block);
     ~Ising2d();
 
     int Utotal();
     int SpinTotal();
 
-    void Run();
+    void Run(std::ofstream& file);
+    float* Runblock();
     void tempRun(std::ofstream& file);
     void smoothTemp(int runs, float maxTemp, std::ofstream& file);
     void timeSeries(std::ofstream& file);
-    int corrFunc(std::ofstream& file);
+    float* corrFunc();
     void smoothcorrLength(int runs, std::ofstream& file);
     int corrLength();
-    void blockSpin();
+    float* blockSpin();
+    float* blockSpin2();
     void DrawToImage(const char* name);
     float du(int i, int j);
 
